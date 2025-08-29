@@ -12,20 +12,20 @@
 <body>
 
     <div id="nav-container">
-            <div id="nav-menu">
+        <div id="nav-menu">
 
-                <span id="nav-logo">
-                    <img src="images/logo.png" alt="" srcset="">
-                </span>
+            <span id="nav-logo">
+                <img src="images/logo.png" alt="" srcset="">
+            </span>
 
-                <ul>
-                   <li><a href="index.html">Home</a></li>
-                    <li><a href="join.html">Join</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="events.html">Events</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-    </div>
+            <ul>
+                <li class="nav-item"><a href="index.html">Home </a></li>
+                <li class="nav-item"><a href="join.html">Join </a></li>
+                <li class="nav-item" id="about-button"><a href="index.html#about">About </a></li>
+                <li class="nav-item"><a href="events.html">Events </a></li>
+                <li class="nav-item"><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
     </div>
 
     <div class="hero">
@@ -39,12 +39,29 @@
         <span id="hamburger" >☰</span>
     </header>
 
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeyTkM7grLg14BTQiSrZpVoFGQ0S9NbPQtO4kpIbSj3j3WwZw/viewform?embedded=true" width="640" height="1887" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+ <div class="section solo">
+  <h2>Contact Us</h2>
+        Email: hello@envisionourmovement.com
+        Instagram: <a href="https://www.instagram.com/envisionourmovement/">@envisionourmovement</a>
+    </div>
+
+<footer>
+    email: hello@envisionourmovement.com
+
+                    <ul>
+                    <li class="footer-item"><a href="index.html">Home </a></li>
+                    <li class="footer-item"><a href="join.html">Join </a></li>
+                    <li class="footer-item" id="about-button"><a href="index.html#about">About </a></li>
+                    <li class="footer-item"><a href="events.html">Events </a></li>
+                    <li class="footer-item"><a href="contact.html">Contact</a></li>
+                </ul>
+</footer>
 
     <script>
     const navContainer = document.getElementById('nav-container');
     const navMenu = document.getElementById('nav-menu');
     const hamburger = document.getElementById('hamburger');
+    const about = document.getElementById('about-button');
 
     hamburger.addEventListener('click', (e) => {
       e.stopPropagation();
@@ -60,6 +77,14 @@
         navContainer.classList.remove('active');
       }
     });
+
+        about.addEventListener('click', () => {
+      if (navContainer.classList.contains('active')) {
+        navContainer.classList.remove('active');
+      }
+    });
+
+    
 </script>
     
 </body>

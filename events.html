@@ -12,20 +12,20 @@
 <body>
 
     <div id="nav-container">
-            <div id="nav-menu">
+        <div id="nav-menu">
 
-                <span id="nav-logo">
-                    <img src="images/logo.png" alt="" srcset="">
-                </span>
+            <span id="nav-logo">
+                <img src="images/logo.png" alt="" srcset="">
+            </span>
 
-                <ul>
-                   <li><a href="index.html">Home</a></li>
-                    <li><a href="join.html">Join</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="events.html">Events</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-    </div>
+            <ul>
+                <li class="nav-item"><a href="index.html">Home </a></li>
+                <li class="nav-item"><a href="join.html">Join </a></li>
+                <li class="nav-item" id="about-button"><a href="index.html#about">About </a></li>
+                <li class="nav-item"><a href="events.html">Events </a></li>
+                <li class="nav-item"><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
     </div>
 
     <div class="hero">
@@ -39,11 +39,32 @@
         <span id="hamburger" >☰</span>
     </header>
 
-    <iframe src="https://calendar.google.com/calendar/embed?src=envisionourmovement%40gmail.com&ctz=America%2FVancouver" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+<iframe 
+  src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FVancouver&showPrint=0&mode=AGENDA&src=ZW52aXNpb25vdXJtb3ZlbWVudEBnbWFpbC5jb20&color=%23616161" 
+  style="border:solid 1px #777" 
+  width="800" 
+  height="600" 
+  frameborder="0" 
+  scrolling="no">
+</iframe>
+
+<footer>
+    email: hello@envisionourmovement.com
+
+                    <ul>
+                    <li class="footer-item"><a href="index.html">Home </a></li>
+                    <li class="footer-item"><a href="join.html">Join </a></li>
+                    <li class="footer-item" id="about-button"><a href="index.html#about">About </a></li>
+                    <li class="footer-item"><a href="events.html">Events </a></li>
+                    <li class="footer-item"><a href="contact.html">Contact</a></li>
+                </ul>
+</footer>
+
     <script>
     const navContainer = document.getElementById('nav-container');
     const navMenu = document.getElementById('nav-menu');
     const hamburger = document.getElementById('hamburger');
+    const about = document.getElementById('about-button');
 
     hamburger.addEventListener('click', (e) => {
       e.stopPropagation();
@@ -59,6 +80,14 @@
         navContainer.classList.remove('active');
       }
     });
+
+        about.addEventListener('click', () => {
+      if (navContainer.classList.contains('active')) {
+        navContainer.classList.remove('active');
+      }
+    });
+
+    
 </script>
     
 </body>
