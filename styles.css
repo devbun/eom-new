@@ -189,6 +189,13 @@ header {
     box-sizing: border-box;
 }
 
+main {
+        background: white;
+    z-index: 1;
+    position: relative;
+    padding: 2rem;
+}
+
 
 main >p {
     padding: 1rem;
