@@ -173,7 +173,7 @@ header {
     flex: 1;            
   min-height: 0;
 
-    background-image: url("/images/splash-compressed-70.png");
+    background-image: url("images/splash-compressed-70.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
